@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
- <meta http-equiv="Content-Security-Policy"
+    <meta http-equiv="Content-Security-Policy"
   content="
-    default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://www.gstatic.com https://www.googleapis.com https://*.firebaseapp.com https://*.firebaseio.com https://cdn.jsdelivr.net https://upload.wikimedia.org;
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com https://www.googleapis.com https://*.firebaseapp.com https://*.firebaseio.com https://cdn.jsdelivr.net;
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com https://www.googleapis.com https://*.firebaseio.com https://*.firebaseapp.com https://cdn.jsdelivr.net;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;
-    img-src 'self' data: https://upload.wikimedia.org https://*.googleusercontent.com;
+    img-src 'self' data: https://*.googleusercontent.com https://upload.wikimedia.org;
+    font-src 'self' https://fonts.gstatic.com;
+    connect-src 'self' https://*.firebaseio.com https://*.googleapis.com https://*.firebaseapp.com;
   ">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
